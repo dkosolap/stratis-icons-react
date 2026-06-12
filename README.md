@@ -46,7 +46,7 @@ export function SearchButton() {
 This package contains React components generated from Stratis UI Icons - 1000+
 Free Figma icons.
 
-Original work: Stratis UI Icons - 1000+ Free Figma icons
+Original work: [Stratis UI Icons - 1000+ Free Figma icons](https://www.figma.com/community/file/1177180791780461401)
 
 License: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
