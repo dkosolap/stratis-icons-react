@@ -1,0 +1,16 @@
+This package contains React components generated from:
+
+  Stratis UI Icons - 1000+ Free Figma icons
+
+Original license:
+
+  Creative Commons Attribution 4.0 International (CC BY 4.0)
+  https://creativecommons.org/licenses/by/4.0/
+
+Changes made:
+
+  The original icon assets were exported or converted into React SVG components
+  and packaged for npm distribution.
+
+This package is not affiliated with, sponsored by, or endorsed by the original
+Stratis UI Icons author unless explicitly stated by that author.

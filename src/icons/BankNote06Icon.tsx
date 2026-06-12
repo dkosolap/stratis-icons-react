@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface BankNote06IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const BankNote06Icon = React.forwardRef<SVGSVGElement, BankNote06IconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M5.9999 5.9999V10.1999M17.9999 5.9999V10.1999M17.3999 14.3999H19.7999C20.794 14.3999 21.5999 13.594 21.5999 12.5999V4.1999C21.5999 3.20579 20.794 2.3999 19.7999 2.3999H4.1999C3.20579 2.3999 2.3999 3.20579 2.3999 4.1999V12.5999C2.3999 13.594 3.20579 14.3999 4.1999 14.3999H6.5999M15.1644 18.4342L11.9989 21.5997L8.60484 18.2056M11.9989 21.5997L11.9991 14.6574M14.3999 8.3999C14.3999 9.72539 13.3254 10.7999 11.9999 10.7999C10.6744 10.7999 9.5999 9.72539 9.5999 8.3999C9.5999 7.07442 10.6744 5.9999 11.9999 5.9999C13.3254 5.9999 14.3999 7.07442 14.3999 8.3999Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+BankNote06Icon.displayName = 'BankNote06Icon';
+
+export { BankNote06Icon };
+export default BankNote06Icon;

@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface WifiOnIconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const WifiOnIcon = React.forwardRef<SVGSVGElement, WifiOnIconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M6.01129 12.1871C9.31912 8.97669 14.6822 8.97669 17.99 12.1871M9.00596 15.0935C10.6599 13.4883 13.3414 13.4883 14.9953 15.0935M12.0006 18L12.0182 17.983M3 9.61811C7.97056 4.79396 16.0294 4.79396 21 9.61811" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+WifiOnIcon.displayName = 'WifiOnIcon';
+
+export { WifiOnIcon };
+export default WifiOnIcon;

@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface Edit01IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const Edit01Icon = React.forwardRef<SVGSVGElement, Edit01IconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M12.5364 19.2428L13.2787 18.4109C14.1894 17.3902 15.8235 17.5229 16.5576 18.6772C17.2415 19.7525 18.7273 19.9563 19.6755 19.105L21.021 17.8969M2.97876 19.4699L7.34474 18.5902C7.57652 18.5435 7.78934 18.4293 7.95648 18.2621L17.7302 8.48307C18.1988 8.01422 18.1984 7.25423 17.7294 6.78577L15.659 4.71769C15.1902 4.24942 14.4306 4.24974 13.9622 4.7184L4.18752 14.4985C4.02071 14.6654 3.90681 14.8777 3.86006 15.109L2.97876 19.4699Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+Edit01Icon.displayName = 'Edit01Icon';
+
+export { Edit01Icon };
+export default Edit01Icon;

@@ -1,0 +1,28 @@
+import * as React from 'react';
+
+export interface StarsIconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const StarsIcon = React.forwardRef<SVGSVGElement, StarsIconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M14.8234 2.40002L16.6537 7.34623L21.5999 9.1765L16.6537 11.0068L14.8234 15.953L12.9932 11.0068L8.04696 9.1765L12.9932 7.34623L14.8234 2.40002Z" stroke={color} strokeWidth="2" strokeLinejoin="round"/>
+<path d="M6.35284 13.6941L7.95167 16.0483L10.3058 17.6471L7.95167 19.2459L6.35284 21.6L4.75402 19.2459L2.3999 17.6471L4.75402 16.0483L6.35284 13.6941Z" stroke={color} strokeWidth="2" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+StarsIcon.displayName = 'StarsIcon';
+
+export { StarsIcon };
+export default StarsIcon;

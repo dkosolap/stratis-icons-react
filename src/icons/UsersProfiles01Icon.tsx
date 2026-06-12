@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface UsersProfiles01IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const UsersProfiles01Icon = React.forwardRef<SVGSVGElement, UsersProfiles01IconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M16.0253 20.5708L16.0256 17.3571C16.0258 15.5819 14.5867 14.1427 12.8115 14.1427H5.61432C3.83939 14.1427 2.40046 15.5815 2.40026 17.3564L2.3999 20.5708M21.5996 20.571L21.5999 17.3572C21.6001 15.5821 20.161 14.1429 18.3858 14.1429M15.4062 4.06061C16.1955 4.64624 16.7071 5.5851 16.7071 6.64343C16.7071 7.70176 16.1955 8.64061 15.4062 9.22625M12.4937 6.64325C12.4937 8.41833 11.0547 9.85731 9.27964 9.85731C7.50457 9.85731 6.06559 8.41833 6.06559 6.64325C6.06559 4.86818 7.50457 3.4292 9.27964 3.4292C11.0547 3.4292 12.4937 4.86818 12.4937 6.64325Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+UsersProfiles01Icon.displayName = 'UsersProfiles01Icon';
+
+export { UsersProfiles01Icon };
+export default UsersProfiles01Icon;

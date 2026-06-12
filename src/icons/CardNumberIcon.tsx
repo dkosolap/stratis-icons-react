@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface CardNumberIconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const CardNumberIcon = React.forwardRef<SVGSVGElement, CardNumberIconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M14.4001 18.3001H4.8004C3.47495 18.3001 2.40044 17.2256 2.4004 15.9001L2.40015 6.90031C2.40011 5.5748 3.47464 4.50024 4.80015 4.50024H19.1996C20.5251 4.50024 21.5996 5.57414 21.5996 6.89966L21.5997 11.1002M2.99968 8.7001H20.9997M18.6007 19.4998H20.1246M20.1246 19.4998H21.5428M20.1246 19.4998V13.9362L18.3791 15.1362" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+CardNumberIcon.displayName = 'CardNumberIcon';
+
+export { CardNumberIcon };
+export default CardNumberIcon;

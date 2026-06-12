@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface Umbrella02IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const Umbrella02Icon = React.forwardRef<SVGSVGElement, Umbrella02IconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M11.9999 2.80005C17.3018 2.80005 21.5999 7.09812 21.5999 12.4H2.3999C2.3999 7.09812 6.69797 2.80005 11.9999 2.80005ZM11.9999 2.80005C8.3999 7.00005 8.53324 10 7.9999 12.4M11.9999 2.80005C14.9999 7.00005 15.4666 10 15.9999 12.4M11.1999 13.2V18.4C11.1999 19.9464 12.4535 21.2 13.9999 21.2C15.5463 21.2 16.7999 19.9464 16.7999 18.4V18" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+Umbrella02Icon.displayName = 'Umbrella02Icon';
+
+export { Umbrella02Icon };
+export default Umbrella02Icon;

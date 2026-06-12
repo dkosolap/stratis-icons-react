@@ -1,0 +1,28 @@
+import * as React from 'react';
+
+export interface FastBackwardIconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const FastBackwardIcon = React.forwardRef<SVGSVGElement, FastBackwardIconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M13.9188 12.481L20.4388 19.001C20.8673 19.4295 21.5999 19.126 21.5999 18.5201L21.5999 5.48012C21.5999 4.87415 20.8673 4.57068 20.4388 4.99917L13.9188 11.5191C13.6532 11.7848 13.6532 12.2154 13.9188 12.481Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2.59912 12.481L9.11909 19.001C9.54757 19.4295 10.2802 19.126 10.2802 18.5201L10.2802 5.48012C10.2802 4.87415 9.54757 4.57068 9.11909 4.99917L2.59912 11.5191C2.3335 11.7848 2.3335 12.2154 2.59912 12.481Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+FastBackwardIcon.displayName = 'FastBackwardIcon';
+
+export { FastBackwardIcon };
+export default FastBackwardIcon;

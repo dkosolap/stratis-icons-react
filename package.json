@@ -1,0 +1,40 @@
+{
+  "name": "stratis-icons-react",
+  "version": "1.0.0",
+  "description": "React SVG components generated from Stratis UI Icons",
+  "license": "CC-BY-4.0",
+  "keywords": ["icons", "react", "svg", "stratis", "ui"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "NOTICE"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "build:demo": "vite build --outDir demo-dist",
+    "dev": "vite",
+    "dev:lib": "tsup --watch",
+    "prepublishOnly": "pnpm build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}

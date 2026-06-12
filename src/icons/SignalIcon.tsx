@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface SignalIconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const SignalIcon = React.forwardRef<SVGSVGElement, SignalIconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M11.9473 11.796H12M9.8198 7.85843C8.43635 8.62608 7.5 10.1017 7.5 11.796C7.5 13.4902 8.43635 14.9658 9.8198 15.7335M14.1802 7.85843C15.5637 8.62608 16.5 10.1017 16.5 11.796C16.5 13.4902 15.5637 14.9658 14.1802 15.7335M7.5 19.5919C4.80989 18.0358 3 15.1272 3 11.796C3 8.46469 4.80989 5.55614 7.5 4M16.5 19.5919C19.1901 18.0358 21 15.1272 21 11.796C21 8.46469 19.1901 5.55614 16.5 4" stroke={color} strokeWidth="2" strokeLinecap="round"/>
+    </svg>
+  )
+);
+
+SignalIcon.displayName = 'SignalIcon';
+
+export { SignalIcon };
+export default SignalIcon;

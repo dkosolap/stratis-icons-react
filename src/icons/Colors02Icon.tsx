@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface Colors02IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const Colors02Icon = React.forwardRef<SVGSVGElement, Colors02IconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M5.89081 18.0197H7.05445M16.3635 13.3652H19.2726C20.5579 13.3652 21.5999 14.4071 21.5999 15.6924V19.1833C21.5999 20.4687 20.5579 21.5106 19.2726 21.5106H7.05445M11.1272 6.74812L14.7043 3.17102C15.6131 2.26217 17.0867 2.26217 17.9955 3.17102L20.464 5.63947C21.3728 6.54832 21.3728 8.02187 20.464 8.93073L10.5454 18.8493M4.72717 21.5106H8.21808C9.5034 21.5106 10.5454 20.4687 10.5454 19.1833V5.21971C10.5454 3.93439 9.5034 2.89244 8.21808 2.89244H4.72717C3.44186 2.89244 2.3999 3.93439 2.3999 5.21971V19.1833C2.3999 20.4687 3.44186 21.5106 4.72717 21.5106Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+Colors02Icon.displayName = 'Colors02Icon';
+
+export { Colors02Icon };
+export default Colors02Icon;

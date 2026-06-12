@@ -1,0 +1,27 @@
+import * as React from 'react';
+
+export interface Cloud02IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+const Cloud02Icon = React.forwardRef<SVGSVGElement, Cloud02IconProps>(
+  ({ size = 24, color = 'currentColor', ...props }, ref) => (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M5.4 18H11.4M10.2 21.6H16.2M16.2 18H19.8M21 8.40002C21 11.7137 18.3137 14.4 15 14.4C13.5438 14.4 11.4 14.4 11.4 14.4C11.4 14.4 9.11306 14.4 7.8 14.4C5.14903 14.4 3 12.251 3 9.60002C3 6.94906 5.14903 4.80002 7.8 4.80002C8.54469 4.80002 9.24977 4.96961 9.87873 5.27227C10.9331 3.54955 12.8323 2.40002 15 2.40002C18.3137 2.40002 21 5.08632 21 8.40002Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+);
+
+Cloud02Icon.displayName = 'Cloud02Icon';
+
+export { Cloud02Icon };
+export default Cloud02Icon;
