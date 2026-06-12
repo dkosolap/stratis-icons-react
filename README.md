@@ -4,6 +4,10 @@ React SVG icon components generated from Stratis UI Icons.
 
 ## Demo
 
+Browse all available icons online:
+
+https://dkosolap.github.io/stratis-icons-react/
+
 Run the local icon browser:
 
 ```bash
